@@ -1,6 +1,7 @@
 export default function KontribusiPage() {
   return (
     <form className="space-y-4 max-w-md">
+      <h2 className="text-gold font-bold mb-2">Form Kontribusi</h2>
       <div>
         <label className="block mb-1">Nama</label>
         <input className="w-full p-2 bg-black/30 border border-gold/40 rounded focus:border-gold" />

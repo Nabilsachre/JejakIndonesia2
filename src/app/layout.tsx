@@ -5,7 +5,7 @@ import Head from 'next/head'
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="id" className="bg-black text-gold">
+    <html lang="id" className="bg-black text-white">
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Jejak Indonesia</title>
@@ -13,13 +13,13 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body className="min-h-screen flex flex-col">
         <header className="border-b border-gold/30 backdrop-blur-sm">
           <nav className="max-w-7xl mx-auto flex flex-wrap gap-6 p-4 items-center">
-            <Link href="/" className="font-bold text-xl whitespace-nowrap">
+            <Link href="/" className="font-bold text-xl whitespace-nowrap text-gold">
               Jejak<span className="text-white">Indonesia</span>
             </Link>
             <div className="flex gap-4 text-sm">
-              <Link className="hover:text-white" href="/">Jelajahi</Link>
-              <Link className="hover:text-white" href="/kontribusi">Kontribusi</Link>
-              <Link className="hover:text-white" href="/tentang">Tentang</Link>
+              <Link className="hover:text-gold" href="/">Jelajahi</Link>
+              <Link className="hover:text-gold" href="/kontribusi">Kontribusi</Link>
+              <Link className="hover:text-gold" href="/tentang">Tentang</Link>
             </div>
           </nav>
         </header>

@@ -25,7 +25,7 @@ export default function FilterSidebar({ data, onChange }: Props) {
 
   return (
     <aside className="p-4 border-r border-gold" aria-label="Filter sidebar">
-      <h2 className="font-bold mb-2">Kategori</h2>
+      <h2 className="text-gold font-bold mb-2">Kategori</h2>
       <ul>
         {categories.map((cat) => (
           <li key={cat} className="mb-1">
@@ -40,7 +40,7 @@ export default function FilterSidebar({ data, onChange }: Props) {
           </li>
         ))}
       </ul>
-      <button className="mt-2 underline" onClick={() => setActive(new Set())}>
+      <button className="mt-2 underline hover:text-gold" onClick={() => setActive(new Set())}>
         Reset
       </button>
     </aside>
