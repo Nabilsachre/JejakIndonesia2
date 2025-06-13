@@ -8,8 +8,8 @@ export default function Card({ item, onClick, selected }: Props) {
     <button
       onClick={onClick}
       className={clsx(
-        'border p-4 m-2 snap-start shrink-0 transition hover:scale-105',
-        selected ? 'border-white scale-105' : 'border-gold'
+        'w-full h-full rounded-lg p-4 flex flex-col justify-between transition border bg-black/10 m-2 snap-start shrink-0',
+        selected ? 'border-white scale-105' : 'border-gold hover:scale-105'
       )}
     >
       <h3 className="text-gold font-bold">{item.name}</h3>
